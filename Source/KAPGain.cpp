@@ -9,3 +9,21 @@
 */
 
 #include "KAPGain.h"
+
+KAPGain::KAPGain()
+{
+    
+}
+
+KAPGain::~KAPGain()
+{
+    
+}
+
+void KAPGain::process(float* inAudio,
+                      float inGain,
+                      float* outAudio,
+                      int inNumSamplesToRender)
+{
+    
+}
