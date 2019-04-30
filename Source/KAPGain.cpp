@@ -25,5 +25,7 @@ void KAPGain::process(float* inAudio,
                       float* outAudio,
                       int inNumSamplesToRender)
 {
-    
+    for(int i = 0; i < inNumSamplesToRender; i++) {
+        outAudio[i] = inAudio[i] * inGain;
+    };
 }
