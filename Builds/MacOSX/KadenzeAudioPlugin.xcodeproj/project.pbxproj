@@ -77,6 +77,18 @@
 			isa = PBXBuildFile;
 			fileRef = 27B8DA2B3B50E3D8B81C83E5;
 		};
+		91AD404AB668CCDEB2BB6525 = {
+			isa = PBXBuildFile;
+			fileRef = A59D48D5E8D90A889FC3E624;
+		};
+		A38FE2171CB4C4B5F9AB2C81 = {
+			isa = PBXBuildFile;
+			fileRef = 3924D0C32565169C916FBCC4;
+		};
+		3E57218259629499B17B88E5 = {
+			isa = PBXBuildFile;
+			fileRef = AA33FB194D4FEBEB0F415B73;
+		};
 		9DA624667661E757B0584222 = {
 			isa = PBXBuildFile;
 			fileRef = 58D500B89BF473BBE6E3F52D;
@@ -193,6 +205,13 @@
 			path = "/Applications/JUCE/modules/juce_audio_basics";
 			sourceTree = "<absolute>";
 		};
+		1F9732CE0A11DFBE356A32E7 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPDelay.h;
+			path = ../../Source/KAPDelay.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		23C153CB47A53DF31AF28185 = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -235,41 +254,6 @@
 			path = ../../Source/PluginEditor.h;
 			sourceTree = "SOURCE_ROOT";
 		};
-		3BA960F081FE87EC89F07DC0 = {
-			isa = PBXFileReference;
-			lastKnownFileType = file;
-			name = "juce_audio_processors";
-			path = "/Applications/JUCE/modules/juce_audio_processors";
-			sourceTree = "<absolute>";
-		};
-		4BD3966CEC85F70FF6EE1B08 = {
-			isa = PBXFileReference;
-			lastKnownFileType = file;
-			name = "juce_audio_devices";
-			path = "/Applications/JUCE/modules/juce_audio_devices";
-			sourceTree = "<absolute>";
-		};
-		4EF09CCC3ADD083C68F3F311 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = AppConfig.h;
-			path = ../../JuceLibraryCode/AppConfig.h;
-			sourceTree = "SOURCE_ROOT";
-		};
-		52666E61E9B4DD3D7A993C9E = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.objcpp;
-			name = "include_juce_audio_basics.mm";
-			path = "../../JuceLibraryCode/include_juce_audio_basics.mm";
-			sourceTree = "SOURCE_ROOT";
-		};
-		642299099F66FBB3CFBB6D1E = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = JuceHeader.h;
-			path = ../../JuceLibraryCode/JuceHeader.h;
-			sourceTree = "SOURCE_ROOT";
-		};
 		B558A6E8CAFB470B957D6391 = {
 			isa = PBXFileReference;
 			explicitFileType = wrapper.cfbundle;
@@ -291,6 +275,20 @@
 			path = KadenzeAudioPlugin.app;
 			sourceTree = "BUILT_PRODUCTS_DIR";
 		};
+		3924D0C32565169C916FBCC4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPGain.cpp;
+			path = ../../Source/KAPGain.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		3BA960F081FE87EC89F07DC0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_processors";
+			path = "/Applications/JUCE/modules/juce_audio_processors";
+			sourceTree = "<absolute>";
+		};
 		3E76A7BDECFEC97B3F4D59FD = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -304,6 +302,27 @@
 			name = DiscRecording.framework;
 			path = System/Library/Frameworks/DiscRecording.framework;
 			sourceTree = SDKROOT;
+		};
+		4BD3966CEC85F70FF6EE1B08 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_devices";
+			path = "/Applications/JUCE/modules/juce_audio_devices";
+			sourceTree = "<absolute>";
+		};
+		4EF09CCC3ADD083C68F3F311 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = AppConfig.h;
+			path = ../../JuceLibraryCode/AppConfig.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		52666E61E9B4DD3D7A993C9E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_basics.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_basics.mm";
+			sourceTree = "SOURCE_ROOT";
 		};
 		546C55806973EE345FD6EF57 = {
 			isa = PBXFileReference;
@@ -331,6 +350,13 @@
 			lastKnownFileType = text.plist.xml;
 			name = "Info-Standalone_Plugin.plist";
 			path = "Info-Standalone_Plugin.plist";
+			sourceTree = "SOURCE_ROOT";
+		};
+		642299099F66FBB3CFBB6D1E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = JuceHeader.h;
+			path = ../../JuceLibraryCode/JuceHeader.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		6E48E87C65BFFC15165AEFD5 = {
@@ -367,6 +393,13 @@
 			name = "juce_opengl";
 			path = "/Applications/JUCE/modules/juce_opengl";
 			sourceTree = "<absolute>";
+		};
+		7A518B8E196CB74C247B8B20 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPLfo.h;
+			path = ../../Source/KAPLfo.h;
+			sourceTree = "SOURCE_ROOT";
 		};
 		86DF7FBB1525FB9FEF020B34 = {
 			isa = PBXFileReference;
@@ -431,6 +464,13 @@
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp";
 			sourceTree = "SOURCE_ROOT";
 		};
+		A59D48D5E8D90A889FC3E624 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPDelay.cpp;
+			path = ../../Source/KAPDelay.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		A717DCB94CE4F9F61F46B5CC = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -465,6 +505,13 @@
 			name = Cocoa.framework;
 			path = System/Library/Frameworks/Cocoa.framework;
 			sourceTree = SDKROOT;
+		};
+		AA33FB194D4FEBEB0F415B73 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPLfo.cpp;
+			path = ../../Source/KAPLfo.cpp;
+			sourceTree = "SOURCE_ROOT";
 		};
 		AFE25C0335228B1F07C16F92 = {
 			isa = PBXFileReference;
@@ -513,6 +560,20 @@
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_graphics.mm";
 			path = "../../JuceLibraryCode/include_juce_graphics.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		C69EFCC8931ACD2A1526DAC0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPGain.h;
+			path = ../../Source/KAPGain.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		CA41A95C524BA9189E178ADC = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPAudioHelpers.h;
+			path = ../../Source/KAPAudioHelpers.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		CE53A8044658BAE0DBE8A6CA = {
@@ -599,6 +660,27 @@
 			path = System/Library/Frameworks/Carbon.framework;
 			sourceTree = SDKROOT;
 		};
+		5576D20C5284162DF897A472 = {
+			isa = PBXGroup;
+			children = (
+				CA41A95C524BA9189E178ADC,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		9E8687AA20024F0424D08CB5 = {
+			isa = PBXGroup;
+			children = (
+				A59D48D5E8D90A889FC3E624,
+				1F9732CE0A11DFBE356A32E7,
+				3924D0C32565169C916FBCC4,
+				C69EFCC8931ACD2A1526DAC0,
+				AA33FB194D4FEBEB0F415B73,
+				7A518B8E196CB74C247B8B20,
+			);
+			name = DSP;
+			sourceTree = "<group>";
+		};
 		621D45D55EB469ED4E0B8A49 = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +695,8 @@
 		FC2AF3CB4D64FC05984E07FA = {
 			isa = PBXGroup;
 			children = (
+				5576D20C5284162DF897A472,
+				9E8687AA20024F0424D08CB5,
 				621D45D55EB469ED4E0B8A49,
 			);
 			name = KadenzeAudioPlugin;
@@ -1467,6 +1551,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91AD404AB668CCDEB2BB6525,
+				A38FE2171CB4C4B5F9AB2C81,
+				3E57218259629499B17B88E5,
 				9DA624667661E757B0584222,
 				833949612E6142D82643E6DA,
 				A8EE6A80FA8A5315FFAD9A54,

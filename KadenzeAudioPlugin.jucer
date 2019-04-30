@@ -3,6 +3,18 @@
 <JUCERPROJECT id="fcBrBg" name="KadenzeAudioPlugin" projectType="audioplug"
               jucerVersion="5.4.3">
   <MAINGROUP id="bRBDeZ" name="KadenzeAudioPlugin">
+    <GROUP id="{BAB0765A-A7DD-8248-EC31-70D7791CA517}" name="Helpers">
+      <FILE id="VMlQ5d" name="KAPAudioHelpers.h" compile="0" resource="0"
+            file="Source/KAPAudioHelpers.h"/>
+    </GROUP>
+    <GROUP id="{37793806-149A-9655-76E3-2C0AAE353E56}" name="DSP">
+      <FILE id="lm7poz" name="KAPDelay.cpp" compile="1" resource="0" file="Source/KAPDelay.cpp"/>
+      <FILE id="ow8CsJ" name="KAPDelay.h" compile="0" resource="0" file="Source/KAPDelay.h"/>
+      <FILE id="v9X2Fj" name="KAPGain.cpp" compile="1" resource="0" file="Source/KAPGain.cpp"/>
+      <FILE id="CsehvY" name="KAPGain.h" compile="0" resource="0" file="Source/KAPGain.h"/>
+      <FILE id="WPGcjZ" name="KAPLfo.cpp" compile="1" resource="0" file="Source/KAPLfo.cpp"/>
+      <FILE id="bC6bIx" name="KAPLfo.h" compile="0" resource="0" file="Source/KAPLfo.h"/>
+    </GROUP>
     <GROUP id="{D2C72E1E-7C03-B35D-E6F9-2B7E4DCB0FC3}" name="Source">
       <FILE id="cCA9Xw" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
