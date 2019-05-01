@@ -34,6 +34,7 @@ void KAPDelay::process(float* inAudio,
                        float inTime,
                        float inFeedback,
                        float inWetDry,
+                       float* outAudio,
                        int inNumSamplesToRender)
 {
     
