@@ -168,14 +168,17 @@ void KadenzeAudioPluginAudioProcessor::processBlock (AudioBuffer<float>& buffer,
                                 channelData,
                                 buffer.getNumSamples());
         
+        mLfo[channel]->process(0.25,
+                               0.5,
+                               buffer.getNumSamples());
+        
         mDelay[channel]->process(channelData,
                                  0.25,
                                  0.5,
                                  0.35,
+                                 mLfo[channel]->getBuffer(),
                                  channelData,
                                  buffer.getNumSamples());
-
-        // ..do something to the data...
     }
 }
 
