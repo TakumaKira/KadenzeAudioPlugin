@@ -10,6 +10,9 @@
 
 #pragma once
 
+#define kParameterSmoothingCoeff_Generic 0.04
+#define kParameterSmoothingCoeff_Fine 0.002
+
 const static int maxBufferDelaySize = 192000;
 
 const static double kPI = 3.14159265359;
