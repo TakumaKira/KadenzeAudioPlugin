@@ -60,7 +60,7 @@ void KAPDelay::process(float* inAudio,
         
         mDelayIndex = mDelayIndex + 1;
         
-        if (mDelayIndex > maxBufferDelaySize) {
+        if (mDelayIndex >= maxBufferDelaySize) {
             mDelayIndex = mDelayIndex - maxBufferDelaySize;
         }
     }
@@ -77,7 +77,7 @@ double KAPDelay::getInterpolatedSample(float inDelayTimeInSamples)
     
     int index_y0 = (int)readPosition - 1;
     
-    if (index_y0 < 0) {
+    if (index_y0 <= 0) {
         index_y0 = index_y0 + maxBufferDelaySize;
     }
     

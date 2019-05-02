@@ -10,7 +10,7 @@
 
 #pragma once
 
-const int maxBufferDelaySize = 19200;
+const int maxBufferDelaySize = 192000;
 
 class KAPDelay
 {
