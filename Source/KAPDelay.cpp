@@ -52,6 +52,17 @@ void KAPDelay::process(float* inAudio,
         
         const double sample = getInterpolatedSample(delayTimeInSamples);
         
+        mBuffer[mDelayIndex] = inAudio[i] + (mFeedbackSample * feedbackMapped);
+        
+        mFeedbackSample = sample;
+        
+        outAudio[i] = (inAudio[i]*dry + sample*wet);
+        
+        mDelayIndex = mDelayIndex + 1;
+        
+        if (mDelayIndex > maxBufferDelaySize) {
+            mDelayIndex = mDelayIndex - maxBufferDelaySize;
+        }
     }
     
 }
