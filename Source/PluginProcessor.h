@@ -13,7 +13,7 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 
 #include "KAPGain.h"
-
+#include "KAPDelay.h"
 
 //==============================================================================
 /**
@@ -64,7 +64,7 @@ private:
     void initializeDSP();
     
     ScopedPointer<KAPGain> mGain [2];
-    
+    ScopedPointer<KAPDelay> mDelay [2];
     
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (KadenzeAudioPluginAudioProcessor)

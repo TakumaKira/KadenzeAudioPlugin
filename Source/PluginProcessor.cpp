@@ -193,6 +193,7 @@ void KadenzeAudioPluginAudioProcessor::initializeDSP()
 {
     for (int i = 0; i < 2; i++) {
         mGain[i] = new KAPGain();
+        mDelay[i] = new KAPDelay();
     }
 }
 
