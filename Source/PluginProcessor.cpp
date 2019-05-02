@@ -97,6 +97,9 @@ void KadenzeAudioPluginAudioProcessor::prepareToPlay (double sampleRate, int sam
 {
     // Use this method as the place to do any pre-playback
     // initialisation that you need..
+    for (int i = 0; i < 2; i++) {
+        mDelay[i]->setSampleRate(sampleRate);
+    }
 }
 
 void KadenzeAudioPluginAudioProcessor::releaseResources()
