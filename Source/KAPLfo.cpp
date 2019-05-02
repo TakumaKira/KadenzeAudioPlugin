@@ -9,3 +9,28 @@
 */
 
 #include "KAPLfo.h"
+
+KAPLfo::KAPLfo()
+{
+    
+}
+
+KAPLfo::~KAPLfo()
+{
+    
+}
+
+void KAPLfo::reset()
+{
+    
+}
+
+void KAPLfo::getSampleRate(double inSampleRate)
+{
+    
+}
+
+void KAPLfo::process(float inRate, float inDepth, int inNumSamples)
+{
+    
+}
