@@ -51,9 +51,9 @@ void KAPDelay::process(float* inAudio,
     
     for (int i = 0; i < inNumSamplesToRender; i++) {
         
-        const double delayTimeModulation = (0.003 + (0.002 * inModulationBuffer[i]));
+        const double delayTimeModulation = (inTime + (0.002 * inModulationBuffer[i]));
 
-        mTimeSmoothed = mTimeSmoothed - kParameterSmoothingCoeff_Fine*(mTimeSmoothed-(inTime*delayTimeModulation));
+        mTimeSmoothed = mTimeSmoothed - kParameterSmoothingCoeff_Fine*(mTimeSmoothed-(delayTimeModulation));
         
         const double delayTimeInSamples = (mTimeSmoothed * mSampleRate);
         
