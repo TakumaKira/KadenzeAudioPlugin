@@ -100,6 +100,7 @@ void KadenzeAudioPluginAudioProcessor::prepareToPlay (double sampleRate, int sam
     // initialisation that you need..
     for (int i = 0; i < 2; i++) {
         mDelay[i]->setSampleRate(sampleRate);
+        mLfo[i]->setSampleRate(sampleRate);
     }
 }
 
@@ -109,6 +110,7 @@ void KadenzeAudioPluginAudioProcessor::releaseResources()
     // spare memory, etc.
     for (int i = 0; i < 2; i++) {
         mDelay[i]->reset();
+        mLfo[i]->reset();
     }
 }
 
@@ -207,6 +209,7 @@ void KadenzeAudioPluginAudioProcessor::initializeDSP()
     for (int i = 0; i < 2; i++) {
         mGain[i] = new KAPGain();
         mDelay[i] = new KAPDelay();
+        mLfo[i] = new KAPLfo();
     }
 }
 
