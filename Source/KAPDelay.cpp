@@ -9,8 +9,8 @@
 */
 
 #include "KAPDelay.h"
-
 #include "JuceHeader.h"
+#include "KAPAudioHelpers.h"
 
 KAPDelay::KAPDelay()
 :   mSampleRate(-1),
