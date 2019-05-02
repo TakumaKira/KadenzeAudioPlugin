@@ -24,6 +24,8 @@ public:
     
     void process(float inRate, float inDepth, int inNumSamples);
     
+    float* getBuffer();
+    
 private:
     
     double mSampleRate;
