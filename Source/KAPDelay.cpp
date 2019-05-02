@@ -78,6 +78,9 @@ double KAPDelay::getInterpolatedSample(float inDelayTimeInSamples)
     
     const float sample_y0 = mBuffer[index_y0];
     const float sample_y1 = mBuffer[index_y1];
+    const float t = (int)readPosition - readPosition;
     
+    double outSample = kap_linear_interp(sample_y0, sample_y1, t);
     
+    return outSample;
 }
