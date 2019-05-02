@@ -9,3 +9,24 @@
 */
 
 #pragma once
+
+class KAPLfo
+{
+public:
+    KAPLfo();
+    ~KAPLfo();
+    
+    void reset();
+    
+    void getSampleRate(double inSampleRate);
+    
+    void process(float inRate, float inDepth, int inNumSamples);
+    
+private:
+    
+    double mSampleRate;
+    
+    float mPhase;
+    
+    float mBuffer [192000];
+};
