@@ -10,6 +10,8 @@
 
 #pragma once
 
+#include "KAPAudioHelpers.h"
+
 class KAPLfo
 {
 public:
@@ -28,5 +30,5 @@ private:
     
     float mPhase;
     
-    float mBuffer [192000];
+    float mBuffer [maxBufferDelaySize];
 };
