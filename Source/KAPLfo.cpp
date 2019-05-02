@@ -26,7 +26,7 @@ void KAPLfo::reset()
     mPhase = 0.0f;
 }
 
-void KAPLfo::getSampleRate(double inSampleRate)
+void KAPLfo::setSampleRate(double inSampleRate)
 {
     zeromem(mBuffer, sizeof(float) * maxBufferDelaySize);
 }

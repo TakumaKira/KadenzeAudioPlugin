@@ -20,7 +20,7 @@ public:
     
     void reset();
     
-    void getSampleRate(double inSampleRate);
+    void setSampleRate(double inSampleRate);
     
     void process(float inRate, float inDepth, int inNumSamples);
     
