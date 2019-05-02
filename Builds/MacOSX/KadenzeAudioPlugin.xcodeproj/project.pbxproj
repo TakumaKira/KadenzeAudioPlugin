@@ -77,6 +77,34 @@
 			isa = PBXBuildFile;
 			fileRef = 27B8DA2B3B50E3D8B81C83E5;
 		};
+		047060EA8A258ED549E06F3E = {
+			isa = PBXBuildFile;
+			fileRef = 11437B6FBE3626DF1BFE6F86;
+		};
+		093427C4A8B186A494A1E407 = {
+			isa = PBXBuildFile;
+			fileRef = 306E30EA0C0AB42F4E0FEE49;
+		};
+		044D3FCE849BDCE490F7F068 = {
+			isa = PBXBuildFile;
+			fileRef = 9F5BB91E42A5040ECF6CCA54;
+		};
+		8AD05C6867E1095233765B10 = {
+			isa = PBXBuildFile;
+			fileRef = 672639A08FA53BBB6BAAADEA;
+		};
+		DB8B0996109844C8E2FBC586 = {
+			isa = PBXBuildFile;
+			fileRef = B97D41F00FE8E8430DEEE7C3;
+		};
+		219007FF111CB84FDA42D3B2 = {
+			isa = PBXBuildFile;
+			fileRef = 5AFE162D8A4A880DFBE88E9F;
+		};
+		F78FC6AF51C6B389C575CD29 = {
+			isa = PBXBuildFile;
+			fileRef = 00CD301D350BEF2761D763A1;
+		};
 		91AD404AB668CCDEB2BB6525 = {
 			isa = PBXBuildFile;
 			fileRef = A59D48D5E8D90A889FC3E624;
@@ -177,6 +205,13 @@
 			isa = PBXBuildFile;
 			fileRef = FBCD4F85F4767FE16E0D0C13;
 		};
+		00CD301D350BEF2761D763A1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPTopPanel.cpp;
+			path = ../../Source/KAPTopPanel.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		080163411CB15C07E9EAE76B = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -191,11 +226,32 @@
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_AU.r";
 			sourceTree = "SOURCE_ROOT";
 		};
+		0EE2EF1759F5D6AEC018D690 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPTopPanel.h;
+			path = ../../Source/KAPTopPanel.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		0FF0E9329D38091584837182 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = "include_juce_audio_plugin_client_Standalone.cpp";
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
+		11437B6FBE3626DF1BFE6F86 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPPanelBase.cpp;
+			path = ../../Source/KAPPanelBase.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		1A7021BC90685F138F9C1779 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPCenterPanelMenuBar.h;
+			path = ../../Source/KAPCenterPanelMenuBar.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		1F78434D7FC3CFAE5DF6FC75 = {
@@ -254,26 +310,12 @@
 			path = ../../Source/PluginEditor.h;
 			sourceTree = "SOURCE_ROOT";
 		};
-		B558A6E8CAFB470B957D6391 = {
+		306E30EA0C0AB42F4E0FEE49 = {
 			isa = PBXFileReference;
-			explicitFileType = wrapper.cfbundle;
-			includeInIndex = 0;
-			path = KadenzeAudioPlugin.vst3;
-			sourceTree = "BUILT_PRODUCTS_DIR";
-		};
-		DA1D41DCD960C5EF4134BA32 = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.cfbundle;
-			includeInIndex = 0;
-			path = KadenzeAudioPlugin.component;
-			sourceTree = "BUILT_PRODUCTS_DIR";
-		};
-		288498133368EEBBE3B292F7 = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.application;
-			includeInIndex = 0;
-			path = KadenzeAudioPlugin.app;
-			sourceTree = "BUILT_PRODUCTS_DIR";
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPCenterPanel.cpp;
+			path = ../../Source/KAPCenterPanel.cpp;
+			sourceTree = "SOURCE_ROOT";
 		};
 		3924D0C32565169C916FBCC4 = {
 			isa = PBXFileReference;
@@ -288,20 +330,6 @@
 			name = "juce_audio_processors";
 			path = "/Applications/JUCE/modules/juce_audio_processors";
 			sourceTree = "<absolute>";
-		};
-		3E76A7BDECFEC97B3F4D59FD = {
-			isa = PBXFileReference;
-			lastKnownFileType = wrapper.framework;
-			name = OpenGL.framework;
-			path = System/Library/Frameworks/OpenGL.framework;
-			sourceTree = SDKROOT;
-		};
-		41C0420E04773970EC17F94B = {
-			isa = PBXFileReference;
-			lastKnownFileType = wrapper.framework;
-			name = DiscRecording.framework;
-			path = System/Library/Frameworks/DiscRecording.framework;
-			sourceTree = SDKROOT;
 		};
 		4BD3966CEC85F70FF6EE1B08 = {
 			isa = PBXFileReference;
@@ -345,11 +373,25 @@
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
-		5F9323D62E9F16B9FD8FA9AF = {
+		5AFE162D8A4A880DFBE88E9F = {
 			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
-			name = "Info-Standalone_Plugin.plist";
-			path = "Info-Standalone_Plugin.plist";
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPMainPanel.cpp;
+			path = ../../Source/KAPMainPanel.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		5C6161893064CD8765515548 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPGainPanel.h;
+			path = ../../Source/KAPGainPanel.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		5D9EFFEE036FDF3B5EB25F5B = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPPanelBase.h;
+			path = ../../Source/KAPPanelBase.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		642299099F66FBB3CFBB6D1E = {
@@ -357,6 +399,69 @@
 			lastKnownFileType = sourcecode.c.h;
 			name = JuceHeader.h;
 			path = ../../JuceLibraryCode/JuceHeader.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		672639A08FA53BBB6BAAADEA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPFxPanel.cpp;
+			path = ../../Source/KAPFxPanel.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		687135F8B68006929DA6462C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPCenterPanel.h;
+			path = ../../Source/KAPCenterPanel.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		B558A6E8CAFB470B957D6391 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = KadenzeAudioPlugin.vst3;
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		DA1D41DCD960C5EF4134BA32 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = KadenzeAudioPlugin.component;
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		288498133368EEBBE3B292F7 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = KadenzeAudioPlugin.app;
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		3E76A7BDECFEC97B3F4D59FD = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = OpenGL.framework;
+			path = System/Library/Frameworks/OpenGL.framework;
+			sourceTree = SDKROOT;
+		};
+		41C0420E04773970EC17F94B = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = DiscRecording.framework;
+			path = System/Library/Frameworks/DiscRecording.framework;
+			sourceTree = SDKROOT;
+		};
+		5F9323D62E9F16B9FD8FA9AF = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			name = "Info-Standalone_Plugin.plist";
+			path = "Info-Standalone_Plugin.plist";
+			sourceTree = "SOURCE_ROOT";
+		};
+		6D3466BFC74C94128128B1E4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPMainPanel.h;
+			path = ../../Source/KAPMainPanel.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		6E48E87C65BFFC15165AEFD5 = {
@@ -450,6 +555,13 @@
 			path = "/Applications/JUCE/modules/juce_events";
 			sourceTree = "<absolute>";
 		};
+		9F5BB91E42A5040ECF6CCA54 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPCenterPanelMenuBar.cpp;
+			path = ../../Source/KAPCenterPanelMenuBar.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		A1A1DC10B7BA0F959C6D96CC = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -534,6 +646,13 @@
 			path = System/Library/Frameworks/IOKit.framework;
 			sourceTree = SDKROOT;
 		};
+		B97D41F00FE8E8430DEEE7C3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = KAPGainPanel.cpp;
+			path = ../../Source/KAPGainPanel.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		B99FB707D9F4898BDCCD1D15 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -546,6 +665,13 @@
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_audio_utils.mm";
 			path = "../../JuceLibraryCode/include_juce_audio_utils.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		BE7AC954F7BA262DD1B78648 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPFxPanel.h;
+			path = ../../Source/KAPFxPanel.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		C0789E48C4C3EFF58C70D31A = {
@@ -660,6 +786,27 @@
 			path = System/Library/Frameworks/Carbon.framework;
 			sourceTree = SDKROOT;
 		};
+		643397EF4A18C6778C24C8DB = {
+			isa = PBXGroup;
+			children = (
+				11437B6FBE3626DF1BFE6F86,
+				5D9EFFEE036FDF3B5EB25F5B,
+				306E30EA0C0AB42F4E0FEE49,
+				687135F8B68006929DA6462C,
+				9F5BB91E42A5040ECF6CCA54,
+				1A7021BC90685F138F9C1779,
+				672639A08FA53BBB6BAAADEA,
+				BE7AC954F7BA262DD1B78648,
+				B97D41F00FE8E8430DEEE7C3,
+				5C6161893064CD8765515548,
+				5AFE162D8A4A880DFBE88E9F,
+				6D3466BFC74C94128128B1E4,
+				00CD301D350BEF2761D763A1,
+				0EE2EF1759F5D6AEC018D690,
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
 		5576D20C5284162DF897A472 = {
 			isa = PBXGroup;
 			children = (
@@ -695,6 +842,7 @@
 		FC2AF3CB4D64FC05984E07FA = {
 			isa = PBXGroup;
 			children = (
+				643397EF4A18C6778C24C8DB,
 				5576D20C5284162DF897A472,
 				9E8687AA20024F0424D08CB5,
 				621D45D55EB469ED4E0B8A49,
@@ -1551,6 +1699,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047060EA8A258ED549E06F3E,
+				093427C4A8B186A494A1E407,
+				044D3FCE849BDCE490F7F068,
+				8AD05C6867E1095233765B10,
+				DB8B0996109844C8E2FBC586,
+				219007FF111CB84FDA42D3B2,
+				F78FC6AF51C6B389C575CD29,
 				91AD404AB668CCDEB2BB6525,
 				A38FE2171CB4C4B5F9AB2C81,
 				3E57218259629499B17B88E5,
