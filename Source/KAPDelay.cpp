@@ -49,11 +49,11 @@ void KAPDelay::process(float* inAudio,
     const float dry = 1.0f - wet;
     const float feedbackMapped = jmap(inFeedback, 0.0f, 1.0f, 0.0f, 0.95f);
     
-//    const double delayTimeModulation = (0.003 + (0.002 * inModulationBuffer[0]));
-    
     for (int i = 0; i < inNumSamplesToRender; i++) {
         
-        mTimeSmoothed = mTimeSmoothed - kParameterSmoothingCoeff_Fine*(mTimeSmoothed-(inTime*inModulationBuffer[i]));
+        const double delayTimeModulation = (0.003 + (0.002 * inModulationBuffer[i]));
+
+        mTimeSmoothed = mTimeSmoothed - kParameterSmoothingCoeff_Fine*(mTimeSmoothed-(inTime*delayTimeModulation));
         
         const double delayTimeInSamples = (mTimeSmoothed * mSampleRate);
         
