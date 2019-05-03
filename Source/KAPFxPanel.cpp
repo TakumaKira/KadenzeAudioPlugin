@@ -31,13 +31,18 @@ void KAPFxPanel::paint(Graphics& g)
     {
         case(kKAPFxPanelStyle_Delay):{
             
+            g.drawFittedText("DELAY", 0, 0, getWidth(), getHeight(), Justification::centred, 1);
         } break;
             
         case(kKAPFxPanelStyle_Chorus):{
             
+            g.drawFittedText("CHORUS", 0, 0, getWidth(), getHeight(), Justification::centred, 1);
         } break;
             
         case(kKAPFxPanelStyle_TotalNumStyles):{
+            
+            // this shouldn't happen!
+            g.drawFittedText("no no no", 0, 0, getWidth(), getHeight(), Justification::centred, 1);
             jassertfalse;
         } break;
     }
