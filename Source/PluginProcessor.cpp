@@ -24,6 +24,8 @@ KadenzeAudioPluginAudioProcessor::KadenzeAudioPluginAudioProcessor()
                        )
 #endif
 {
+    initializeParameters();
+
     initializeDSP();
 }
 
@@ -216,6 +218,11 @@ void KadenzeAudioPluginAudioProcessor::initializeDSP()
         mDelay[i] = new KAPDelay();
         mLfo[i] = new KAPLfo();
     }
+}
+
+void KadenzeAudioPluginAudioProcessor::initializeParameters()
+{
+    
 }
 
 //==============================================================================

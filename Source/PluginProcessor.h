@@ -64,6 +64,9 @@ private:
     /** internal */
     void initializeDSP();
     
+    /** internal */
+    void initializeParameters();
+    
     ScopedPointer<KAPGain> mGain [2];
     ScopedPointer<KAPDelay> mDelay [2];
     ScopedPointer<KAPLfo> mLfo [2];
