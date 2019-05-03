@@ -9,3 +9,18 @@
 */
 
 #include "KAPPanelBase.h"
+
+KAPPanelBase::KAPPanelBase(KadenzeAudioPluginAudioProcessor* inProcessor)
+{
+    
+}
+
+KAPPanelBase::~KAPPanelBase()
+{
+    
+}
+
+void KAPPanelBase::paint (Graphics& g)
+{
+    
+}
