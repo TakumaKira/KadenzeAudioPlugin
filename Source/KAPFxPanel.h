@@ -27,6 +27,8 @@ public:
     KAPFxPanel(KadenzeAudioPluginAudioProcessor* inProcessor);
     ~KAPFxPanel();
     
+    void paint(Graphics& g) override;
+    
     void setFxPanelStyle(KAPFxPanelStyle inStyle);
     
 private:

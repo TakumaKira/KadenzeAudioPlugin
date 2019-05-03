@@ -23,6 +23,11 @@ KAPFxPanel::~KAPFxPanel()
     
 }
 
+void KAPFxPanel::paint(Graphics& g)
+{
+    KAPPanelBase::paint(g);
+}
+
 void KAPFxPanel::setFxPanelStyle(KAPFxPanelStyle inStyle)
 {
     mStyle = inStyle;
