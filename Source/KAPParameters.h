@@ -9,3 +9,16 @@
 */
 
 #pragma once
+
+enum KAPParameter
+{
+    kParameter_InputGain = 0,
+    kParameter_DelayTime,
+    kParameter_DelayFeedback,
+    kParameter_DelayWetDry,
+    kParameter_DelayType, // chorus or delay?
+    kParameter_OutputGain,
+    kParameter_ModulationRate,
+    kParameter_ModulationDepth,
+    kParameter_TotalNumParameters,
+}
