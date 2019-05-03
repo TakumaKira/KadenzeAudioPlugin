@@ -667,6 +667,13 @@
 			path = "../../JuceLibraryCode/include_juce_audio_utils.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		BE35648901BFE6E7DDBA9E06 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPInterfaceDefines.h;
+			path = ../../Source/KAPInterfaceDefines.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		BE7AC954F7BA262DD1B78648 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -811,6 +818,7 @@
 			isa = PBXGroup;
 			children = (
 				CA41A95C524BA9189E178ADC,
+				BE35648901BFE6E7DDBA9E06,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
