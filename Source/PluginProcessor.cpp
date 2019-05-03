@@ -10,6 +10,7 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include "KAPParameters.h"
 
 //==============================================================================
 KadenzeAudioPluginAudioProcessor::KadenzeAudioPluginAudioProcessor()
@@ -222,7 +223,7 @@ void KadenzeAudioPluginAudioProcessor::initializeDSP()
 
 void KadenzeAudioPluginAudioProcessor::initializeParameters()
 {
-    
+//    for (int i = 0; i < 
 }
 
 //==============================================================================
