@@ -11,7 +11,8 @@
 #include "KAPFxPanel.h"
 
 KAPFxPanel::KAPFxPanel(KadenzeAudioPluginAudioProcessor* inProcessor)
-:   KAPPanelBase(inProcessor)
+:   KAPPanelBase(inProcessor),
+    mStyle(kKAPFxPanelStyle_Delay)
 {
     setSize(FX_PANEL_WIDTH,
             FX_PANEL_HEIGHT);
