@@ -13,6 +13,7 @@
 #include "KAPPanelBase.h"
 
 #include "KAPTopPanel.h"
+#include "KAPGainPanel.h"
 
 class KAPMainPanel
 :   public KAPPanelBase
@@ -25,4 +26,6 @@ public:
 private:
     
     ScopedPointer<KAPTopPanel> mTopPanel;
+    ScopedPointer<KAPGainPanel> mInputGainPanel;
+    ScopedPointer<KAPGainPanel> mOutputGainPanel;
 };
