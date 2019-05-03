@@ -39,6 +39,7 @@ void KAPFxPanel::paint(Graphics& g)
             g.drawFittedText("CHORUS", 0, 0, getWidth(), getHeight(), Justification::centred, 1);
         } break;
             
+        default:
         case(kKAPFxPanelStyle_TotalNumStyles):{
             
             // this shouldn't happen!
