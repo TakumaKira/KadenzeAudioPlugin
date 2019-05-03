@@ -13,6 +13,7 @@
 #include "KAPPanelBase.h"
 
 class KAPTopPanel
+:   public KAPPanelBase
 {
 public:
     
@@ -20,4 +21,4 @@ public:
     ~KAPTopPanel();
     
 private:
-}
+};
