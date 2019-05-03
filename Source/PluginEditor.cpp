@@ -17,7 +17,8 @@ KadenzeAudioPluginAudioProcessorEditor::KadenzeAudioPluginAudioProcessorEditor (
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize (400, 300);
+    setSize(MAIN_PANEL_WIDTH,
+            MAIN_PANEL_HEIGHT);
     
     mMainPanel = new KAPMainPanel(&processor);
     addAndMakeVisible(mMainPanel);
