@@ -20,5 +20,7 @@ public:
     KAPTopPanel(KadenzeAudioPluginAudioProcessor* inProcessor);
     ~KAPTopPanel();
     
+    void paint(Graphics& g) override;
+    
 private:
 };
