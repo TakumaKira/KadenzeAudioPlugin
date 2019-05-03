@@ -225,7 +225,13 @@ void KadenzeAudioPluginAudioProcessor::initializeDSP()
 void KadenzeAudioPluginAudioProcessor::initializeParameters()
 {
     for (int i = 0; i < kParameter_TotalNumParameters; i++) {
-        parameters.createAndAddParameter(<#const String &parameterID#>, <#const String &parameterName#>, <#const String &labelText#>, <#NormalisableRange<float> valueRange#>, <#float defaultValue#>, <#std::function<String (float)> valueToTextFunction#>, <#std::function<float (const String &)> textToValueFunction#>)
+        parameters.createAndAddParameter(KAPParameterID[i],
+                                         KAPParameterID[i],
+                                         KAPParameterID[i],
+                                         NormalisableRange<float>(0.0f, 1.0f),
+                                         0.5f,
+                                         nullptr,
+                                         nullptr);
     }
 }
 
