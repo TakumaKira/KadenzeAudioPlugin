@@ -11,6 +11,7 @@
 #include "KAPTopPanel.h"
 
 KAPTopPanel::KAPTopPanel(KadenzeAudioPluginAudioProcessor* inProcessor)
+:   KAPPanelBase(inProcessor)
 {
     
 }
