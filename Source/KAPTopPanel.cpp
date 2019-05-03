@@ -9,3 +9,13 @@
 */
 
 #include "KAPTopPanel.h"
+
+KAPTopPanel::KAPTopPanel(KadenzeAudioPluginAudioProcessor* inProcessor)
+{
+    
+}
+
+KAPTopPanel::~KAPTopPanel()
+{
+    
+}
