@@ -13,6 +13,7 @@
 #include "KAPPanelBase.h"
 
 #include "KAPCenterPanelMenuBar.h"
+#include "KAPFxPanel.h"
 
 class KAPCenterPanel
 :   public KAPPanelBase
@@ -25,4 +26,5 @@ public:
 private:
     
     ScopedPointer<KAPCenterPanelMenuBar> mMenuBar;
+    ScopedPointer<KAPFxPanel> mFxPanel;
 };
