@@ -9,3 +9,16 @@
 */
 
 #pragma once
+
+#include "KAPPanelBase.h"
+
+class KAPMainPanel
+:   public KAPPanelBase
+{
+public:
+    
+    KAPMainPanel(KadenzeAudioPluginAudioProcessor* inProcessor);
+    ~KAPMainPanel();
+
+private:
+};
