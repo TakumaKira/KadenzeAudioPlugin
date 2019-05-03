@@ -13,7 +13,8 @@
 KAPTopPanel::KAPTopPanel(KadenzeAudioPluginAudioProcessor* inProcessor)
 :   KAPPanelBase(inProcessor)
 {
-    
+    setSize(TOP_PANEL_WIDTH,
+            TOP_PANEL_HEIGHT);
 }
 
 KAPTopPanel::~KAPTopPanel()
