@@ -26,6 +26,21 @@ KAPFxPanel::~KAPFxPanel()
 void KAPFxPanel::paint(Graphics& g)
 {
     KAPPanelBase::paint(g);
+    
+    switch (mStyle)
+    {
+        case(kKAPFxPanelStyle_Delay):{
+            
+        } break;
+            
+        case(kKAPFxPanelStyle_Chorus):{
+            
+        } break;
+            
+        case(kKAPFxPanelStyle_TotalNumStyles):{
+            jassertfalse;
+        } break;
+    }
 }
 
 void KAPFxPanel::setFxPanelStyle(KAPFxPanelStyle inStyle)
