@@ -3,6 +3,16 @@
 <JUCERPROJECT id="fcBrBg" name="KadenzeAudioPlugin" projectType="audioplug"
               jucerVersion="5.4.3">
   <MAINGROUP id="bRBDeZ" name="KadenzeAudioPlugin">
+    <GROUP id="{927B0410-CDDF-538D-823D-3B1035FBBEDB}" name="Parameter Control">
+      <FILE id="vVyG4w" name="KAPParameterComboBox.cpp" compile="1" resource="0"
+            file="Source/KAPParameterComboBox.cpp"/>
+      <FILE id="FKiFcs" name="KAPParameterComboBox.h" compile="0" resource="0"
+            file="Source/KAPParameterComboBox.h"/>
+      <FILE id="PVlIJM" name="KAPParameterSlider.cpp" compile="1" resource="0"
+            file="Source/KAPParameterSlider.cpp"/>
+      <FILE id="Vc531C" name="KAPParameterSlider.h" compile="0" resource="0"
+            file="Source/KAPParameterSlider.h"/>
+    </GROUP>
     <GROUP id="{04AD1767-52B8-8E0F-CC35-28291DA85450}" name="Panels">
       <FILE id="IUuzyV" name="KAPPanelBase.cpp" compile="1" resource="0"
             file="Source/KAPPanelBase.cpp"/>
