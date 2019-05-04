@@ -23,5 +23,5 @@ inline void paintComponentLabel(Graphics& g, Component* inComponent)
     const float cornerSize = 3.0f;
     
     g.setColour(Colours::darkgrey);
-    g.drawFittedText(label, x, y, w, h, Justfication::centred, 1);
+    g.drawFittedText(label, x, y, w, h, Justification::centred, 1);
 }
