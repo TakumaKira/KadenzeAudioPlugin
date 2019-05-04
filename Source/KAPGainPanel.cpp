@@ -27,4 +27,13 @@ KAPGainPanel::~KAPGainPanel()
 void KAPGainPanel::setParameterID(int inParameterID)
 {
     mSlider = new KAPParameterSlider(mProcessor->parameters, KAPParameterID[inParameterID]);
+    
+    const int slider_size = 54;
+    
+    mSlider->setBounds((getWidth() * 0.5) - (slider_size * 0.5),
+                       (getHeight() * 0.5) - (slider_size * 0.5),
+                       slider_size,
+                       slider_size);
+    
+    addAndMakeVisible(mSlider);
 }
