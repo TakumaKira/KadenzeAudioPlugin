@@ -14,7 +14,7 @@
 
 inline void paintComponentLabel(Graphics& g, Component* inComponent)
 {
-    const int x = inComponent->getX();
+    const int x = inComponent->getX() - (inComponent->getWidth() * 0.25f);
     const int y = inComponent->getY() + inComponent->getHeight();
     const int w = inComponent->getWidth() * 1.5f;
     const int h = 20;
