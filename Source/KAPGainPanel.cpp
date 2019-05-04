@@ -21,3 +21,8 @@ KAPGainPanel::~KAPGainPanel()
 {
     
 }
+
+void KAPGainPanel::setParameterID(int inParameterID)
+{
+    mSlider = new KAPParameterSlider(mProcessor->parameters);
+}
