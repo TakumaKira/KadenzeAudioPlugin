@@ -10,6 +10,8 @@
 
 #include "KAPGainPanel.h"
 
+#include "KAPParameters.h"
+
 KAPGainPanel::KAPGainPanel(KadenzeAudioPluginAudioProcessor* inProcessor)
 :   KAPPanelBase(inProcessor)
 {
@@ -24,5 +26,5 @@ KAPGainPanel::~KAPGainPanel()
 
 void KAPGainPanel::setParameterID(int inParameterID)
 {
-    mSlider = new KAPParameterSlider(mProcessor->parameters);
+    mSlider = new KAPParameterSlider(mProcessor->parameters, KAPParameterID[inParameterID]);
 }
