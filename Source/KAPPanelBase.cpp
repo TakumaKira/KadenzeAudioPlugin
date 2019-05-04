@@ -11,6 +11,7 @@
 #include "KAPPanelBase.h"
 
 KAPPanelBase::KAPPanelBase(KadenzeAudioPluginAudioProcessor* inProcessor)
+:   mProcessor(inProcessor)
 {
     
 }
