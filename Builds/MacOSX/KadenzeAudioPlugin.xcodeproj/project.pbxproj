@@ -570,6 +570,13 @@
 			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		989C8556102271E33E2F1C75 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPHelperFunctions.h;
+			path = ../../Source/KAPHelperFunctions.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		9B94AF1591237684B2B02DBA = {
 			isa = PBXFileReference;
 			explicitFileType = archive.ar;
@@ -872,6 +879,7 @@
 			isa = PBXGroup;
 			children = (
 				CA41A95C524BA9189E178ADC,
+				989C8556102271E33E2F1C75,
 				BE35648901BFE6E7DDBA9E06,
 				3278658456E6D87340CCECBD,
 			);
