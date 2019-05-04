@@ -11,6 +11,7 @@
 #pragma once
 
 #include "KAPPanelBase.h"
+#include "KAPParameterSlider.h"
 
 enum KAPFxPanelStyle
 {
@@ -34,4 +35,6 @@ public:
 private:
     
     KAPFxPanelStyle mStyle;
+    
+    OwnedArray<KAPParameterSlider> mSliders;
 };
