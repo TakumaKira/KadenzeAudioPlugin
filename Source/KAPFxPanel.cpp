@@ -18,7 +18,7 @@ KAPFxPanel::KAPFxPanel(KadenzeAudioPluginAudioProcessor* inProcessor)
     setSize(FX_PANEL_WIDTH,
             FX_PANEL_HEIGHT);
     
-    setFxPanelStyle(kKAPFxPanelStyle_Delay);
+    setFxPanelStyle(kKAPFxPanelStyle_Chorus);
 }
 
 KAPFxPanel::~KAPFxPanel()
