@@ -21,6 +21,8 @@ KAPCenterPanelMenuBar::KAPCenterPanelMenuBar(KadenzeAudioPluginAudioProcessor* i
     
     mFxTypeComboBox = new KAPParameterComboBox(mProcessor->parameters, KAPParameterID[kParameter_DelayType]);
     mFxTypeComboBox->setBounds(getWidth() - width, 0, width, getHeight());
+    mFxTypeComboBox->addItem("DELAY", 1);
+    mFxTypeComboBox->addItem("CHORUS", 2);
     addAndMakeVisible(mFxTypeComboBox);
 }
 
