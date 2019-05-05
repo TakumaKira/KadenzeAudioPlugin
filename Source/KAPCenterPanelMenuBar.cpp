@@ -33,10 +33,10 @@ KAPCenterPanelMenuBar::~KAPCenterPanelMenuBar()
 
 void KAPCenterPanelMenuBar::addFxTypeComboBoxListener(ComboBox::Listener inListener)
 {
-    mFxTypeComboBox->addListener(inListener);
+    mFxTypeComboBox->addListener(&inListener);
 }
 
 void KAPCenterPanelMenuBar::removeFxTypeComboBoxListener(ComboBox::Listener inListener)
 {
-    mFxTypeComboBox->removeListener(inListener);
+    mFxTypeComboBox->removeListener(&inListener);
 }
