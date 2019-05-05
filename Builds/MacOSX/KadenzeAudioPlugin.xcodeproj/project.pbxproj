@@ -560,6 +560,13 @@
 			path = "/Applications/JUCE/modules/juce_core";
 			sourceTree = "<absolute>";
 		};
+		8C16D2D0A200E21BEC0033FE = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KAPLookAndFeel.h;
+			path = ../../Source/KAPLookAndFeel.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		8C74BAC16754389D64DD3F86 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.cpp;
@@ -908,6 +915,7 @@
 				CA41A95C524BA9189E178ADC,
 				989C8556102271E33E2F1C75,
 				BE35648901BFE6E7DDBA9E06,
+				8C16D2D0A200E21BEC0033FE,
 				3278658456E6D87340CCECBD,
 			);
 			name = Helpers;
