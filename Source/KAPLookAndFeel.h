@@ -33,6 +33,7 @@ public:
     
     ~KAPLookAndFeel();
     
+    /** buttons */
     Font getTextButtonFont (TextButton&, int buttonHeight) override
     {
         return font_1;
@@ -55,6 +56,35 @@ public:
         g.setColour(fillColour);
         g.fillRoundedRectangle(bounds.reduced(1), cornerSize);
     };
+    
+    /** comboBoxes */
+    Font getLabelFont(Label& label) override
+    {
+        return font_1;
+    }
+    
+    void drawPopupMenuItem (Graphics& g, const Rectangle<int>& area,
+                            bool isSeparator, bool isActive, bool isHighlighted, bool isTicked, bool hasSubMenu,
+                            const String& text, const String& shortcutKeyText,
+                            const Drawable* icon, const Colour* textColour) override
+    {
+        juce::Rectangle<int> r (area);
+        
+        Colour fillColour = isHighlighted ? KAPColour_5 : KAPColour_4;
+        
+        g.setColour(fillColour);
+        g.fillRect(r.getX(), r.getY(), r.getWidth(), r.getHeight()-1);
+        
+        Colour textColour = isTicked ? KAPColour_7 : KAPColour_1;
+        g.setColour(textColour);
+        g.setFont(font_1);
+        
+        r.setLeft(10);
+        r.setY(1);
+        g.drawFittedText(text, r, Justification::left, 1);
+    }
+    
+    /** sliders */
     
 private:
 };
