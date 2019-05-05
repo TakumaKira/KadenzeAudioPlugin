@@ -28,3 +28,23 @@ void KAPTopPanel::paint(Graphics& g)
     
     g.drawFittedText("KADENZE AUDIO PLUGIN", 0, 0, getWidth() - 10, getHeight(), Justification::centredRight, 1);
 }
+
+void KAPTopPanel::buttonClicked (Button*)
+{
+    
+}
+
+void KAPTopPanel::comboBoxChanged (ComboBox* comboBoxThatHasChanged)
+{
+    
+}
+
+void KAPTopPanel::displaySaveAsPopup()
+{
+    
+}
+
+void KAPTopPanel::updatePresetComboBox()
+{
+    
+}
