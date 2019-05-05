@@ -67,7 +67,22 @@ void KAPTopPanel::paint(Graphics& g)
 
 void KAPTopPanel::buttonClicked (Button* b)
 {
+    KAPPresetManager* presetManager = mProcessor->getPresetManager();
     
+    if (b == mNewPreset) {
+        
+        presetManager->createNewPreset();
+    }
+    
+    else if (b == mSavePreset) {
+        
+        presetManager->savePreset();
+    }
+    
+    else if (b == mSaveAsPreset) {
+        
+        displaySaveAsPopup();
+    }
 }
 
 void KAPTopPanel::comboBoxChanged (ComboBox* comboBoxThatHasChanged)
@@ -77,10 +92,34 @@ void KAPTopPanel::comboBoxChanged (ComboBox* comboBoxThatHasChanged)
 
 void KAPTopPanel::displaySaveAsPopup()
 {
+    KAPPresetManager* presetManager = mProcessor->getPresetManager();
     
+    String currentPresetName = presetManager->getCurrentPresetName();
+    
+    AlertWindow window ("Save As", "Please enter a name for your preset", AlertWindow::NoIcon);
+    
+    window.centreAroundComponent(this, getWidth(), getHeight());
+    window.addTextEditor("presetName", currentPresetName, "preset name: ");
+    window.addButton("Confirm", 1);
+    window.addButton("Cancel", 0);
+    
+    if (window.runModalLoop()) {
+        
+        String presetName = window.getTextEditor("presetName")->getText();
+        presetManager->saveAsPreset(presetName);
+    }
 }
 
 void KAPTopPanel::updatePresetComboBox()
 {
+    KAPPresetManager* presetManager = mProcessor->getPresetManager();
+    String presetName = presetManager->getCurrentPresetName();
     
+    mPresetDisplay->clear(dontSendNotification);
+    
+    const int numPresets = presetManager->getNumberOfPresets();
+    
+    for (int i = 0; i < numPresets; i++) {
+        mPresetDisplay->addItem(presetManager->getPresetName(i), (i+1));
+    }
 }
