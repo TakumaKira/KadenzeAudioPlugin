@@ -47,3 +47,48 @@ void KAPPresetManager::loadPresetForXml(XmlElement* inElement)
         }
     }
 }
+
+int KAPPresetManager::getNumberOfPresets()
+{
+    
+}
+
+String KAPPresetManager::getPresetName(int inPresetIndex)
+{
+    
+}
+
+void KAPPresetManager::createNewPreset()
+{
+    
+}
+
+void KAPPresetManager::savePreset()
+{
+    
+}
+
+void KAPPresetManager::saveAsPreset(String inPresetName)
+{
+    
+}
+
+void KAPPresetManager::loadPreset(int inPresetIndex)
+{
+    
+}
+
+bool KAPPresetManager::getIsCurrentPresetSaved()
+{
+    
+}
+
+String KAPPresetManager::getCurrentPresetName()
+{
+    
+}
+
+void KAPPresetManager::storeLocalPreset()
+{
+    
+}

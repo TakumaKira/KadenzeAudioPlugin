@@ -12,6 +12,8 @@
 
 #include "JuceHeader.h"
 
+#define PRESET_FILE_EXTENTION ".kpf"
+
 class KAPPresetManager
 {
 public:
@@ -23,7 +25,35 @@ public:
     
     void loadPresetForXml(XmlElement* inElement);
     
+    int getNumberOfPresets();
+    
+    String getPresetName(int inPresetIndex);
+    
+    void createNewPreset();
+    
+    void savePreset();
+    
+    void saveAsPreset(String inPresetName);
+    
+    void loadPreset(int inPresetIndex);
+    
+    bool getIsCurrentPresetSaved();
+    
+    String getCurrentPresetName();
+    
 private:
+    
+    void storeLocalPreset();
+    
+    bool mCurrentPresetIsSaved;
+    
+    File mCurrentlyLoadedPreset;
+    
+    Array<File> mLocalPresets;
+    
+    String mCurrentPresetName;
+    
+    String mPresetDirectory;
     
     XmlElement* mCurrentPresetXml;
     
