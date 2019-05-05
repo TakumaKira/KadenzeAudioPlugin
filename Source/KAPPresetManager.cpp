@@ -23,7 +23,12 @@ KAPPresetManager::~KAPPresetManager()
 
 void KAPPresetManager::getXmlForPreset(XmlElement* inElement)
 {
+    const int numParameters = mProcessor->getNumParameters();
     
+    for (int i = 0; i < numParameters; i++) {
+        inElement->setAttribute(mProcessor->getParameterName(i),
+                                mProcessor->getParameter(i));
+    }
 }
 
 void KAPPresetManager::loadPresetForXml(XmlElement* inElement)
