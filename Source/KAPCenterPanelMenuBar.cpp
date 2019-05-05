@@ -9,12 +9,19 @@
 */
 
 #include "KAPCenterPanelMenuBar.h"
+#include "KAPParameters.h"
 
 KAPCenterPanelMenuBar::KAPCenterPanelMenuBar(KadenzeAudioPluginAudioProcessor* inProcessor)
 :   KAPPanelBase(inProcessor)
 {
     setSize(CENTER_PANEL_MENU_BAR_WIDTH,
             CENTER_PANEL_MENU_BAR_HEIGHT);
+    
+    const int width = 85;
+    
+    mFxTypeComboBox = new KAPParameterComboBox(mProcessor->parameters, KAPParameterID[kParameter_DelayType]);
+    mFxTypeComboBox->setBounds(getWidth() - width, 0, width, getHeight());
+    addAndMakeVisible(mFxTypeComboBox);
 }
 
 KAPCenterPanelMenuBar::~KAPCenterPanelMenuBar()

@@ -11,6 +11,7 @@
 #pragma once
 
 #include "KAPPanelBase.h"
+#include "KAPParameterComboBox.h"
 
 class KAPCenterPanelMenuBar
 :   public KAPPanelBase
@@ -20,4 +21,6 @@ public:
     ~KAPCenterPanelMenuBar();
     
 private:
+    
+    ScopedPointer<KAPParameterComboBox> mFxTypeComboBox;
 };
