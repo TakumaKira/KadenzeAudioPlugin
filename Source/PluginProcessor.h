@@ -62,6 +62,11 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
     
     AudioProcessorValueTreeState parameters;
+    
+    KAPPresetManager* getPresetManager()
+    {
+        return mPresetManager;
+    }
 
 private:
     
