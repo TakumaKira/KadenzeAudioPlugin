@@ -75,8 +75,8 @@ public:
         g.setColour(fillColour);
         g.fillRect(r.getX(), r.getY(), r.getWidth(), r.getHeight()-1);
         
-        Colour textColour = isTicked ? KAPColour_7 : KAPColour_1;
-        g.setColour(textColour);
+        Colour myTextColour = isTicked ? KAPColour_7 : KAPColour_1;
+        g.setColour(myTextColour);
         g.setFont(font_1);
         
         r.setLeft(10);
