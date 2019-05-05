@@ -33,5 +33,15 @@ void KAPPresetManager::getXmlForPreset(XmlElement* inElement)
 
 void KAPPresetManager::loadPresetForXml(XmlElement* inElement)
 {
+    mCurrentPresetXml = inElement;
     
+    const int numParameters = mProcessor->getNumParameters();
+
+    for (int i = 0; i < numParameters; i++) {
+        
+        const String name = mCurrentPresetXml->getAttributeName(i);
+        const float value = mCurrentPresetXml->getDoubleAttribute(name);
+        
+        for (int j = 0; )
+    }
 }
