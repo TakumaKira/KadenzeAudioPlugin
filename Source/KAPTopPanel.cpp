@@ -87,7 +87,13 @@ void KAPTopPanel::buttonClicked (Button* b)
 
 void KAPTopPanel::comboBoxChanged (ComboBox* comboBoxThatHasChanged)
 {
-    
+    if (comboBoxThatHasChanged == mPresetDisplay) {
+        
+        KAPPresetManager* presetManager = mProcessor->getPresetManager();
+
+        const int index = mPresetDisplay->getSelectedItemIndex();
+        presetManager->loadPreset(index);
+    }
 }
 
 void KAPTopPanel::displaySaveAsPopup()
