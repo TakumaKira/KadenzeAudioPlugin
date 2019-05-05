@@ -23,6 +23,7 @@ KAPCenterPanelMenuBar::KAPCenterPanelMenuBar(KadenzeAudioPluginAudioProcessor* i
     mFxTypeComboBox->setBounds(getWidth() - width, 0, width, getHeight());
     mFxTypeComboBox->addItem("DELAY", 1);
     mFxTypeComboBox->addItem("CHORUS", 2);
+    mFxTypeComboBox->setSelectedItemIndex(0, dontSendNotification);
     addAndMakeVisible(mFxTypeComboBox);
 }
 
