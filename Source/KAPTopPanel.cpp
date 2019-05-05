@@ -122,4 +122,6 @@ void KAPTopPanel::updatePresetComboBox()
     for (int i = 0; i < numPresets; i++) {
         mPresetDisplay->addItem(presetManager->getPresetName(i), (i+1));
     }
+    
+    mPresetDisplay->setText(presetManager->getCurrentPresetName());
 }

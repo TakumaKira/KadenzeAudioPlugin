@@ -101,7 +101,7 @@ void KAPPresetManager::savePreset()
 
 void KAPPresetManager::saveAsPreset(String inPresetName)
 {
-    File presetFile = File(mPresetDirectory + directorySeparater + inPresetName);
+    File presetFile = File(mPresetDirectory + directorySeparater + inPresetName + PRESET_FILE_EXTENTION);
     
     if (!presetFile.exists()) {
         presetFile.create();
