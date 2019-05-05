@@ -16,6 +16,8 @@
 #include "KAPDelay.h"
 #include "KAPLfo.h"
 
+#include "KAPPresetManager.h"
+
 //==============================================================================
 /**
 */
@@ -73,6 +75,8 @@ private:
     ScopedPointer<KAPGain> mOutputGain [2];
     ScopedPointer<KAPDelay> mDelay [2];
     ScopedPointer<KAPLfo> mLfo [2];
+    
+    ScopedPointer<KAPPresetManager> mPresetManager;
     
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (KadenzeAudioPluginAudioProcessor)
