@@ -99,7 +99,7 @@ public:
         Path path;
         
         path.startNewSubPath(arrow.getX() + 3.0f, arrow.getCentreY() - 2.0f);
-        path.lineTo(arrow.toFloat().getCentreX(), arrow.toFloat().getCentreY() - 2.0f);
+        path.lineTo(arrow.toFloat().getCentreX(), arrow.toFloat().getCentreY() + 3.0f);
         path.lineTo(arrow.toFloat().getRight() - 3.0f, arrow.toFloat().getCentreY() - 2.0f);
         
         Colour arrowColour = box.findColour(ComboBox::arrowColourId).withAlpha(box.isEnabled() ? 0.9f : 0.2f);
