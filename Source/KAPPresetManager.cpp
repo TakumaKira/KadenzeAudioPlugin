@@ -11,9 +11,19 @@
 #include "KAPPresetManager.h"
 
 KAPPresetManager::KAPPresetManager(AudioProcessor* inProcessor)
-:   mProcessor(inProcessor)
+:   mCurrentPresetIsSaved(false),
+    mCurrentPresetName("Untitled"),
+    mProcessor(inProcessor)
 {
+    const String pluginName = (String) mProcessor->getName();
     
+    mPresetDirectory = (File::getSpecialLocation(File::userDesktopDirectory)).getFullPathName()+pluginName;
+    
+    if (!File(mPresetDirectory).exists()) {
+        File(mPresetDirectory).createDirectory();
+    }
+    
+    storeLocalPreset();
 }
 
 KAPPresetManager::~KAPPresetManager()
