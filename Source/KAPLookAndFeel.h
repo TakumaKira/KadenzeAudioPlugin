@@ -9,3 +9,16 @@
 */
 
 #pragma once
+
+#include "JuceHeader.h"
+
+class KAPLookAndFeel
+:   public LookAndFeel_V4
+{
+public:
+    
+    KAPLookAndFeel();
+    ~KAPLookAndFeel();
+    
+private:
+};
