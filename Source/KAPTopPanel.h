@@ -24,7 +24,7 @@ public:
     
     void paint(Graphics& g) override;
     
-    void buttonClicked (Button*) override;
+    void buttonClicked (Button* b) override;
     
     void comboBoxChanged (ComboBox* comboBoxThatHasChanged) override;
     
