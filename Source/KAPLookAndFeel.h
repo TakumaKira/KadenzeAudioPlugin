@@ -46,7 +46,7 @@ public:
         
         if (isButtonDown) {
             fillColour = KAPColour_5;
-        } else {
+        } else if (isMouseOverButton) {
             fillColour = KAPColour_3;
         }
         
