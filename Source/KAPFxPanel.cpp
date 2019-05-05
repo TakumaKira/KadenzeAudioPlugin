@@ -118,6 +118,8 @@ void KAPFxPanel::setFxPanelStyle(KAPFxPanelStyle inStyle)
             jassertfalse;
         } break;
     }
+    
+    repaint();
 }
 
 void KAPFxPanel::comboBoxChanged (ComboBox* comboBoxThatHasChanged)
