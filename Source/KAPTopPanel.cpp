@@ -107,6 +107,8 @@ void KAPTopPanel::displaySaveAsPopup()
         
         String presetName = window.getTextEditor("presetName")->getText();
         presetManager->saveAsPreset(presetName);
+        
+        updatePresetComboBox();
     }
 }
 
