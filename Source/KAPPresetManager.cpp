@@ -9,3 +9,24 @@
 */
 
 #include "KAPPresetManager.h"
+
+KAPPresetManager::KAPPresetManager(AudioProcessor* inProcessor)
+:   mProcessor(inProcessor)
+{
+    
+}
+
+KAPPresetManager::~KAPPresetManager()
+{
+    
+}
+
+void KAPPresetManager::getXmlForPreset(XmlElement* inElement)
+{
+    
+}
+
+void KAPPresetManager::loadPresetForXml(XmlElement* inElement)
+{
+    
+}
