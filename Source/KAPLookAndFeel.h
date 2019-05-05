@@ -31,7 +31,7 @@ public:
         setColour(TextButton::textColourOffId, KAPColour_1);
     }
     
-    virtual ~KAPLookAndFeel();
+    virtual ~KAPLookAndFeel() {};
     
     /** buttons */
     Font getTextButtonFont (TextButton&, int buttonHeight) override
