@@ -23,9 +23,5 @@ KAPPanelBase::~KAPPanelBase()
 
 void KAPPanelBase::paint (Graphics& g)
 {
-    g.setColour(Colours::whitesmoke);
-    g.fillAll();
-    
-    g.setColour(Colours::black);
-    g.drawRect(0, 0, getWidth(), getHeight());
+    // implement something..
 }
