@@ -36,8 +36,8 @@ void KAPVuMeter::paint(Graphics& g)
     // right
     g.fillRect(meter_width * 2, 0, meter_width, getHeight());
     
-    int ch0fill = getHeight() - (getHeight() - mCh0Level);
-    int ch1fill = getHeight() - (getHeight() - mCh1Level);
+    int ch0fill = getHeight() - (getHeight() * mCh0Level);
+    int ch1fill = getHeight() - (getHeight() * mCh1Level);
     
     if (ch0fill < 0) {
         ch0fill = 0;
