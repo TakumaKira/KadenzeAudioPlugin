@@ -19,6 +19,9 @@ public:
     
     KAPLookAndFeel()
     {
+        // store image assets
+        mSliderImage = ImageCache::getFromMemory(BinaryData::kadenze_knob_png, BinaryData::kadenze_knob_pngSize);
+        
         // comboBox colours
         setColour(ComboBox::backgroundColourId, KAPColour_3);
         setColour(ComboBox::outlineColourId, KAPColour_2);
@@ -116,4 +119,6 @@ public:
     }
     
 private:
+    
+    Image mSliderImage;
 };
