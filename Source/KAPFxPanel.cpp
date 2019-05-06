@@ -35,21 +35,11 @@ void KAPFxPanel::paint(Graphics& g)
     switch (mStyle)
     {
         case(kKAPFxPanelStyle_Delay):{
-            
             g.drawFittedText("DELAY", 0, 0, getWidth(), getHeight() * 0.75, Justification::centred, 1);
         } break;
             
         case(kKAPFxPanelStyle_Chorus):{
-            
             g.drawFittedText("CHORUS", 0, 0, getWidth(), getHeight() * 0.75, Justification::centred, 1);
-        } break;
-            
-        default:
-        case(kKAPFxPanelStyle_TotalNumStyles):{
-            
-            // this shouldn't happen!
-            g.drawFittedText("no no no", 0, 0, getWidth(), getHeight(), Justification::centred, 1);
-            jassertfalse;
         } break;
     }
     
