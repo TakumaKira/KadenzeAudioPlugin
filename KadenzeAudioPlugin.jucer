@@ -3,6 +3,10 @@
 <JUCERPROJECT id="fcBrBg" name="KadenzeAudioPlugin" projectType="audioplug"
               jucerVersion="5.4.3">
   <MAINGROUP id="bRBDeZ" name="KadenzeAudioPlugin">
+    <GROUP id="{EBF53F6E-E7D3-0349-235D-1450A52C9011}" name="Components">
+      <FILE id="GKCshj" name="KAPVuMeter.cpp" compile="1" resource="0" file="Source/KAPVuMeter.cpp"/>
+      <FILE id="rzbnRO" name="KAPVuMeter.h" compile="0" resource="0" file="Source/KAPVuMeter.h"/>
+    </GROUP>
     <GROUP id="{CC6C8463-D3C5-269A-06DE-9ACA268B47D9}" name="Managers">
       <FILE id="d3Eh70" name="KAPPresetManager.cpp" compile="1" resource="0"
             file="Source/KAPPresetManager.cpp"/>
