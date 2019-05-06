@@ -11,6 +11,10 @@
 #include "KAPVuMeter.h"
 
 KAPVuMeter::KAPVuMeter(KadenzeAudioPluginAudioProcessor* inProcessor)
+:   mCh0Level(0),
+    mCh1Level(0),
+    mParameterID(-1),
+    mProcessor(inProcessor)
 {
     
 }
@@ -27,5 +31,5 @@ void KAPVuMeter::paint(Graphics& g)
 
 void KAPVuMeter::setParameterID(int inParameterID)
 {
-    
+    mParameterID = inParameterID;
 }

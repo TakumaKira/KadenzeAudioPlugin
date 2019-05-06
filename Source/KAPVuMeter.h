@@ -14,6 +14,7 @@
 #include "PluginProcessor.h"
 
 class KAPVuMeter
+:   public Component
 {
 public:
     KAPVuMeter(KadenzeAudioPluginAudioProcessor* inProcessor);
@@ -29,4 +30,6 @@ private:
     
     float mCh0Level;
     float mCh1Level;
+    
+    KadenzeAudioPluginAudioProcessor* mProcessor;
 };
