@@ -14,13 +14,16 @@
 #include "PluginProcessor.h"
 
 class KAPVuMeter
-:   public Component
+:   public Component,
+    public Timer
 {
 public:
     KAPVuMeter(KadenzeAudioPluginAudioProcessor* inProcessor);
     ~KAPVuMeter();
     
     void paint(Graphics& g) override;
+    
+    void timerCallback() override;
     
     void setParameterID(int inParameterID);
     

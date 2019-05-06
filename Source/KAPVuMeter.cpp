@@ -29,6 +29,11 @@ void KAPVuMeter::paint(Graphics& g)
     
 }
 
+void KAPVuMeter::timerCallback()
+{
+    
+}
+
 void KAPVuMeter::setParameterID(int inParameterID)
 {
     mParameterID = inParameterID;
