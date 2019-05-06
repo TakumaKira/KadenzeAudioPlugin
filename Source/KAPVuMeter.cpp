@@ -9,3 +9,23 @@
 */
 
 #include "KAPVuMeter.h"
+
+KAPVuMeter::KAPVuMeter(KadenzeAudioPluginAudioProcessor* inProcessor)
+{
+    
+}
+
+KAPVuMeter::~KAPVuMeter()
+{
+    
+}
+
+void KAPVuMeter::paint(Graphics& g)
+{
+    
+}
+
+void KAPVuMeter::setParameterID(int inParameterID)
+{
+    
+}
