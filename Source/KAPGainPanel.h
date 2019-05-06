@@ -12,6 +12,7 @@
 
 #include "KAPPanelBase.h"
 #include "KAPParameterSlider.h"
+#include "KAPVuMeter.h"
 
 class KAPGainPanel
 :   public KAPPanelBase
@@ -27,5 +28,6 @@ public:
     
 private:
     
+    ScopedPointer<KAPVuMeter> mVuMeter;
     ScopedPointer<KAPParameterSlider> mSlider;
 };
