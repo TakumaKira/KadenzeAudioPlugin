@@ -70,6 +70,11 @@
             file="Source/PluginEditor.cpp"/>
       <FILE id="YPaNdb" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
+    <GROUP id="{F317F506-CABF-A452-33E7-4EE3C9281685}" name="Assets">
+      <FILE id="ujCBgU" name="kadenze_bg.png" compile="0" resource="1" file="Assets/kadenze_bg.png"/>
+      <FILE id="lzvNnV" name="kadenze_knob.png" compile="0" resource="1"
+            file="Assets/kadenze_knob.png"/>
+    </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX">

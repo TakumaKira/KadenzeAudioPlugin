@@ -137,6 +137,10 @@
 			isa = PBXBuildFile;
 			fileRef = E2473F8C96570B7D585D1136;
 		};
+		A0DDFD0C13A5400198C2BB87 = {
+			isa = PBXBuildFile;
+			fileRef = 8649BB97C2FEE73AD46665A5;
+		};
 		A8EE6A80FA8A5315FFAD9A54 = {
 			isa = PBXBuildFile;
 			fileRef = 52666E61E9B4DD3D7A993C9E;
@@ -357,6 +361,13 @@
 			path = ../../Source/KAPParameters.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		381151E99BBDE04A8D1DFDDE = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "kadenze_bg.png";
+			path = "../../Assets/kadenze_bg.png";
+			sourceTree = "SOURCE_ROOT";
+		};
 		3BA960F081FE87EC89F07DC0 = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -544,6 +555,13 @@
 			lastKnownFileType = sourcecode.c.h;
 			name = KAPLfo.h;
 			path = ../../Source/KAPLfo.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		8649BB97C2FEE73AD46665A5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = BinaryData.cpp;
+			path = ../../JuceLibraryCode/BinaryData.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
 		86DF7FBB1525FB9FEF020B34 = {
@@ -742,6 +760,13 @@
 			path = ../../Source/KAPFxPanel.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		BF3E0071E0270E541EE66D50 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = BinaryData.h;
+			path = ../../JuceLibraryCode/BinaryData.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		C0789E48C4C3EFF58C70D31A = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -824,6 +849,13 @@
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_gui_extra.mm";
 			path = "../../JuceLibraryCode/include_juce_gui_extra.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		EA080583A5D7E626C9C12A26 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "kadenze_knob.png";
+			path = "../../Assets/kadenze_knob.png";
 			sourceTree = "SOURCE_ROOT";
 		};
 		EC1CC2AF8FA51CA35769C879 = {
@@ -945,6 +977,15 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
+		BCAB721C6037B82F9ED4C330 = {
+			isa = PBXGroup;
+			children = (
+				381151E99BBDE04A8D1DFDDE,
+				EA080583A5D7E626C9C12A26,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		FC2AF3CB4D64FC05984E07FA = {
 			isa = PBXGroup;
 			children = (
@@ -954,6 +995,7 @@
 				5576D20C5284162DF897A472,
 				9E8687AA20024F0424D08CB5,
 				621D45D55EB469ED4E0B8A49,
+				BCAB721C6037B82F9ED4C330,
 			);
 			name = KadenzeAudioPlugin;
 			sourceTree = "<group>";
@@ -983,6 +1025,8 @@
 			isa = PBXGroup;
 			children = (
 				4EF09CCC3ADD083C68F3F311,
+				8649BB97C2FEE73AD46665A5,
+				BF3E0071E0270E541EE66D50,
 				52666E61E9B4DD3D7A993C9E,
 				A7F6950F8A48567F24F0D767,
 				705F00A60A86B0B8AB3B5EB8,
@@ -1822,6 +1866,7 @@
 				3E57218259629499B17B88E5,
 				9DA624667661E757B0584222,
 				833949612E6142D82643E6DA,
+				A0DDFD0C13A5400198C2BB87,
 				A8EE6A80FA8A5315FFAD9A54,
 				8A37A95F75F7042C7DB96ED0,
 				41D9038FC4E4A7606480662A,
