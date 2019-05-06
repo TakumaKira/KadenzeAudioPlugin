@@ -9,6 +9,7 @@
 */
 
 #include "KAPPanelBase.h"
+#include "KAPInterfaceDefines.h"
 
 KAPPanelBase::KAPPanelBase(KadenzeAudioPluginAudioProcessor* inProcessor)
 :   mProcessor(inProcessor)
@@ -21,7 +22,20 @@ KAPPanelBase::~KAPPanelBase()
     
 }
 
+void KAPPanelBase::mouseEnter (const MouseEvent& event)
+{
+    repaint();
+}
+
+void KAPPanelBase::mouseExit (const MouseEvent& event)
+{
+    repaint();
+}
+
 void KAPPanelBase::paint (Graphics& g)
 {
-    // implement something..
+    if (isMouseOver()) {
+        g.setColour(KAPColour_4);
+        g.fillAll();
+    }
 }
