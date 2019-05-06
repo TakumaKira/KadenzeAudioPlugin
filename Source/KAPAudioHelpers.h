@@ -22,6 +22,14 @@ const static double kPI = 3.14159265359;
 
 const static double k2PI = 6.28318530718;
 
+static inline float dBToNormalizedGain(float inValue)
+{
+    float inValuedB = Decibels::gainToDecibels(inValue + 0.00001f);
+    inValuedB = (inValuedB + 96.0f) / 96.0f;
+    
+    return inValuedB;
+}
+
 inline float kap_linear_interp(float v0, float v1, float t)
 {
     return (1 - t) * v0 + t * v1;
